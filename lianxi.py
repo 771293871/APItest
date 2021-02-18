@@ -5,22 +5,20 @@ import csv
 import time
 import os
 import csv
-for (root,dirs,files) in os.walk("D:/接口测试/jemter/save/PPG项目/ECG数据未标定/mimicecg1"):
-    for f in files:
-        old_path = os.path.join(root,f)
-        print(old_path)
-        with open('D:/接口测试/jemter/save/PPG项目/ECG数据未标定/112.csv','a',newline='')as f1:
-            spam = csv.writer(f1)
-            spam.writerow([old_path])
 
 
 
 
 
-
-
-
-
+# #遍历文件夹，将文件名写入文档
+# for (root,dirs,files) in os.walk("D:/接口测试/jemter/save/PPG项目/ECG数据未标定/mimicecg1"):
+#     for f in files:
+#         old_path = os.path.join(root,f)
+#         print(old_path)
+#         with open('D:/接口测试/jemter/save/PPG项目/ECG数据未标定/112.csv','a',newline='')as f1:
+#             spam = csv.writer(f1)
+#             spam.writerow([old_path])
+##遍历文件件，改文件名
 # for (root,dirs,files) in os.walk("E:\old"):
 #     i=1
 #     j=1
